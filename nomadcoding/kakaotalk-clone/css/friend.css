@@ -6,9 +6,39 @@
 
 .friend .friend__avatar {
   width: 50px;
-  border-radius: 35%;
+  border-radius: 38%;
+  margin-right: 15px;
 }
 
-.friend .friend__avatar.g-avatar {
+.friend__avatar.g-avatar {
   width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__column .friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__column .friend__status,
+.friend__column .friend__bottom-text,
+.friend__column .chat__timestamp {
+  opacity: 60%;
+}
+
+.friend__column .friend__bottom-text {
+  font-size: 16px;
+}
+
+.friend__column .friend__status,
+.friend__column .chat__timestamp {
+  font-size: 12px;
 }
