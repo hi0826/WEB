@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:53</span>
@@ -39,25 +39,43 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Sunday, May 17, 2020</span>
         <li class="incoming-message message">
           <img src="images/avatar.jpg" class="g-avatar message-avatar" />
           <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="message__burbble">
+            <span class="message__burbble">
               Congrats I love you!
-            </div>
+            </span>
+            <span class="message__author">Best Friend</span>
           </div>
           <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <div class="message__burbble">
-              Thx a lot!
-            </div>
+            <span class="message__burbble">
+              Thank you see you soon!
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="g-avatar message-avatar" />
+          <div class="message__content">
+            <span class="message__burbble">
+              Congrats I love you!
+            </span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__burbble">
+              Thank you see you soon!
+            </span>
           </div>
         </li>
       </ul>
