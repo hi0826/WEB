@@ -1,3 +1,0 @@
-# git blog
-
-# No Theme
