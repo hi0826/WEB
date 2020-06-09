@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  /*Main Axis*/
+  justify-content: space-around;
+  /*Cross Axis*/
+  align-items: stretch;
+  height: 200vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: peru;
+  color: white;
+}
