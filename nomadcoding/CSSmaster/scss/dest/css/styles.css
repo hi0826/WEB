@@ -1,6 +1,1 @@
-body {
-  background: peru;
-}
-body a {
-  color: #00f;
-}
+a,button{font-family:inherit;border-radius:7px;font-size:12px;text-transform:uppercase;padding:5px 10px;background-color:peru;color:#fff;font-weight:500}h2{color:#e7473c}.box{margin-top:20px}.box:hover{background-color:green}.box h2{color:#00f}.box button,.box h2:hover,h1{color:red}a{margin-bottom:10px;text-decoration:none}a:nth-child(even),a:nth-child(odd){text-decoration:none;display:block;color:red}a:nth-child(even){color:#00f}button{border:0}@media screen and (min-width:500px) and (max-width:690px){h1{color:#ff0}}@media screen and (max-width:500px) and (max-width:690px) and (orientation:landscape){h1{font-size:60px}}@media screen and (min-width:501px) and (max-width:1120px){h1{color:green}}
