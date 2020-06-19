@@ -4,7 +4,7 @@
   "description": "Youtube Clone with Vanila and Node JS",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js --delay 2",
+    "start": "nodemon --exec babel-node init.js --delay 2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hongil Choi",
