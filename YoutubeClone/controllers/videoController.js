@@ -23,7 +23,7 @@ export const postUpload = (req, res) => {
 };
 
 export const videoDetail = (req, res) =>
-  res.render("Video Detail", { pageTitle: "Video Detail" });
+  res.render("VideoDetail", { pageTitle: "Video Detail" });
 
 export const editVideo = (req, res) =>
   res.render("Edit Video", { pageTitle: "Edit Video" });
