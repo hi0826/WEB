@@ -1,7 +1,6 @@
 import express from "express";
 import routes from "../routes";
 import {
-  users,
   userDetail,
   editProfile,
   changePassword,
@@ -9,7 +8,6 @@ import {
 
 const userRouter = express.Router();
 
-userRouter.get(routes.home, users);
 userRouter.get("/change", changePassword);
 userRouter.get(routes.editProfile, editProfile);
 userRouter.get(routes.userDetail, userDetail);
