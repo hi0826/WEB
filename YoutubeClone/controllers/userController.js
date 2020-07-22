@@ -1,6 +1,7 @@
 import passport from "passport";
 import routes from "../routes";
 import User from "../model/User";
+import { urlencoded } from "body-parser";
 
 export const getJoin = (req, res) => {
   res.render("join", { pageTitle: "Join" });
@@ -40,12 +41,31 @@ export const postLogin = passport.authenticate("local", {
 
 export const githubLogin = passport.authenticate("github");
 
-export const githubLoginCallback = (accessToken, refreshToken, profile, cb) => {
-  console.log(accessToken, refreshToken, profile, cb);
+export const githubLoginCallback = (_, __, profile, cb) => {
+  const {
+    _json: {id, avatar_url, name, email}
+  } = profile;
+  try {
+    const user = await User.findOne({email});
+    if (user) {
+      user.githubId = id;
+      user.save();
+      return cb(null, user);
+    }
+    const newUser = await User.create({
+      email,
+      name,
+      githubId : id,
+      avatarUrl : avatar_url
+    });
+    return cb(null, newUser);
+  } catch(error) {
+    return cb(error);
+  }
 };
 
 export const postGithubLogIn = (req, res) => {
-  res.send(routes.home);
+  res.redirect(routes.home);
 };
 
 export const logout = (req, res) => {
